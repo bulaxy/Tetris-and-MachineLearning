@@ -10,6 +10,10 @@ NES Tetris
 - lv 0 gravity 48frames per cell (800ms per cell)
 - Soft Drop 2 Frames per cell (~33ms per cell)
 
+- Line Clear Delay = 10 frames (18 if line clear)
+
+- If Movement is press during LCD, DAS counter does not reset
+
 |lv|frames|ms|
 |:---:|:---:|:---:|
 |0|48|800|
