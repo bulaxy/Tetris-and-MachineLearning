@@ -3,22 +3,22 @@ import { useState, useEffect } from "react";
 export const useKeyPress = (targetKey) => {
     const [keyPressed, setKeyPressed] = useState(false);
 
-    const downHandler = ({ key }) => {
-        if (key === targetKey && typeof targetKey === 'string') {
+    const downHandler = ({ keyCode }) => {
+        if (keyCode === targetKey && typeof targetKey === 'string') {
             return setKeyPressed(true);
         }
 
-        if (targetKey.includes(key) && typeof targetKey === 'object') {
+        if (targetKey.includes(keyCode) && typeof targetKey === 'object') {
             return setKeyPressed(true);
         }
     }
 
-    const upHandler = ({ key }) => {
-        if (key === targetKey && typeof targetKey === 'string') {
+    const upHandler = ({ keyCode }) => {
+        if (keyCode === targetKey && typeof targetKey === 'string') {
             return setKeyPressed(false);
         }
 
-        if (targetKey.includes(key) && typeof targetKey === 'object') {
+        if (targetKey.includes(keyCode) && typeof targetKey === 'object') {
             return setKeyPressed(false);
         }
     };

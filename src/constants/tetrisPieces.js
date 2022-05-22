@@ -11,5 +11,13 @@ export const TETROMINO = {
     l: {
         shape: [[null, 'l', null], [null, 'l', null], [null, 'l', 'l']]
     },
-
+    z: {
+        shape: [['z', 'z', null], [null, 'z', 'z'], [null, null, null]]
+    },
+    s: {
+        shape: [[null, 's', 's'], ['s', 's', null], [null, null, null]]
+    },
+    t: {
+        shape: [['t', 't', 't'], [null, 't', null], [null, null, null]]
+    },
 }
